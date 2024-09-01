@@ -18,3 +18,6 @@ pub fn get_task_id_from_input(message: &str) -> u32 {
 
     return parsed_id
 }
+
+pub const FILE_PATH: &str = "tasks.json";
+pub const INPUTS: [&str; 5] = ["1", "2", "3", "4", "5"];

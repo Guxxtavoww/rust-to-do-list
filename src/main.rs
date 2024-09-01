@@ -2,11 +2,8 @@ mod task;
 mod utils;
 
 use std::io::stdin;
-use utils::{ show_menu, get_task_id_from_input };
+use utils::{ show_menu, get_task_id_from_input, FILE_PATH, INPUTS };
 use task::{ add_task, delete_task, list_tasks, load_tasks, save_tasks, toggle_task_completion  };
-
-const INPUTS: [&str; 5] = ["1", "2", "3", "4", "5"];
-const FILE_PATH: &str = "tasks.json";
 
 fn main() {
     let mut tasks = load_tasks(FILE_PATH);
