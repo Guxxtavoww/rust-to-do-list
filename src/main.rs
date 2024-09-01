@@ -29,7 +29,7 @@ fn main() {
             "1" => {
                 println!("Digite a descrição da tarefa:");
                 let mut description = String::new();
-                std::io::stdin().read_line(&mut description).expect("Failed to read line");
+                stdin().read_line(&mut description).expect("Failed to read line");
                 let description = description.trim().to_string();
                 add_task(&mut tasks, description);
             },
