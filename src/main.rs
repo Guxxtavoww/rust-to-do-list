@@ -2,7 +2,7 @@ mod task;
 mod utils;
 
 use std::io::stdin;
-use utils::{show_menu, get_task_id_from_input};
+use utils::{ show_menu, get_task_id_from_input };
 use task::{ add_task, delete_task, list_tasks, load_tasks, save_tasks, toggle_task_completion  };
 
 const INPUTS: [&str; 5] = ["1", "2", "3", "4", "5"];

@@ -1,6 +1,6 @@
-use std::{fs::File, io::{Read, Write}};
-use serde_json::{from_str, to_string};
 use serde::{ Serialize, Deserialize };
+use serde_json::{ from_str, to_string };
+use std::{ fs::File, io::{ Read, Write } };
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Task {
