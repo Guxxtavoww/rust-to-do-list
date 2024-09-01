@@ -5,7 +5,7 @@ pub fn show_menu() {
     println!("2. Listar Tarefas");
     println!("3. Trocar status da tarefa");
     println!("4. Remover Tarefa");
-    println!("5. Sair \n\n");
+    println!("5. Sair & Salvar \n\n");
 }
 
 pub fn get_task_id_from_input(message: &str) -> u32 {
